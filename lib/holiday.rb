@@ -69,7 +69,7 @@ def all_supplies_in_holidays(holiday_hash)
     season_name = season
     value.each do |holiday, value|
       holiday_name = holiday
-      supplies = value.split(", ")
+      supplies = value.join(", ")
     end
     puts "#{season}:
       #{holiday}: #{supplies}"
